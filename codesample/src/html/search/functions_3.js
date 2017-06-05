@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['getcollidemytarget',['getCollideMyTarget',['../classRobot.html#af3301a2536ba5bc5aefb7367ccbad6bd',1,'Robot']]],
+  ['getcolors',['getColors',['../classBaseObject.html#a85cace89c6a85cb8e312e6e8a1decf29',1,'BaseObject']]],
+  ['getenv',['getEnv',['../classBaseObject.html#a3f3c53a54006151370013c39262682c6',1,'BaseObject']]],
+  ['getheight',['getHeight',['../classWalls.html#a696765c4b969fbe387d03d7c469c6e16',1,'Walls']]],
+  ['getid',['getID',['../classBaseObject.html#a6d4bd3f6a445bf8f4c304582e5a8c71d',1,'BaseObject']]],
+  ['getnumobjects',['getNumObjects',['../classEnvironment.html#a9808cd4199ace6e21de16b2e37ed4212',1,'Environment']]],
+  ['getobjectcolors',['getObjectColors',['../classEnvironment.html#ad233a196b5e2d3d9a21194011d135335',1,'Environment']]],
+  ['getobjectobstaclecollisionstatus',['getObjectObstacleCollisionStatus',['../classEnvironment.html#a3bae68ad481d5c6da8846ffed6ec08fc',1,'Environment']]],
+  ['getobjectorientation',['getObjectOrientation',['../classEnvironment.html#a57407c2a4127023ab3e3e8631d742b45',1,'Environment']]],
+  ['getobjectposition',['getObjectPosition',['../classEnvironment.html#a21de28a8d647dd3dfa097faaa76266c8',1,'Environment']]],
+  ['getobjectradius',['getObjectRadius',['../classEnvironment.html#ab09800efb10e10230b8f49dbea0c4019',1,'Environment']]],
+  ['getobjecttype',['getObjectType',['../classEnvironment.html#a40f36635e3a08093bfc7c13dae1ab802',1,'Environment']]],
+  ['getpairedtargetid',['getPairedTargetID',['../classRobot.html#a8b7a0c6c281310ae1c4c0df08257599b',1,'Robot']]],
+  ['getradius',['getRadius',['../classBaseObject.html#a6dc634df2e679f28ab1435d494a3375e',1,'BaseObject']]],
+  ['getspeed',['getSpeed',['../classBaseObject.html#ac46f29b5be2bc1036115e5ee76f3996f',1,'BaseObject']]],
+  ['getthickness',['getThickness',['../classWalls.html#a7b781a5d6151546dfcdde4981f44f0c9',1,'Walls']]],
+  ['gettype',['getType',['../classBaseObject.html#ab333e5027b28d1dbe97736297efd1b94',1,'BaseObject']]],
+  ['getwalls',['getWalls',['../classEnvironment.html#aeb10b316d1a388fa633613d5a7c1c095',1,'Environment']]],
+  ['getwidth',['getWidth',['../classWalls.html#a360fb70538bfd72d05ba9b011ac4f7bb',1,'Walls']]]
+];

@@ -1,0 +1,33 @@
+\hypertarget{Robot_8cpp}{\section{Robot\-Class.\-cpp File Reference}
+\label{Robot_8cpp}\index{Robot\-Class.\-cpp@{Robot\-Class.\-cpp}}
+}
+
+
+A robot inherits much of its methods from its parent. However, it also extends it by adding robot-\/specific methods such as point\-To, which points the robot at a target. Future functionality will have the robot controlled by the user physically pressing keys, which will be distinct from how other agents are manipulated.  
+
+
+{\ttfamily \#include \char`\"{}Robot\-Class.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::vector$<$ std\-::pair\\*
+$<$ int, char $>$ $>$ \hyperlink{Robot_8cpp_a7f22ec3bcddc803dd2a219a2beb12ded}{Collide\-Vector\-Pair}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A robot inherits much of its methods from its parent. However, it also extends it by adding robot-\/specific methods such as point\-To, which points the robot at a target. Future functionality will have the robot controlled by the user physically pressing keys, which will be distinct from how other agents are manipulated. Class definition for the Robot (child class of Environment). A robot inherits much of its methods from its parent. However, it also extends it by adding robot-\/specific methods such as point\-To, which points the robot at a target. Improving the iteration 2 code, Robot adding to sensor about touch and homing. Being able to collide obstacle, Robot adding to recognize the target and obstacle.
+
+\begin{DoxyAuthor}{Author}
+George Brown
+
+George Brown, Duk\-Jin Ahn 
+\end{DoxyAuthor}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{Robot_8cpp_a7f22ec3bcddc803dd2a219a2beb12ded}{\index{Robot\-Class.\-cpp@{Robot\-Class.\-cpp}!Collide\-Vector\-Pair@{Collide\-Vector\-Pair}}
+\index{Collide\-Vector\-Pair@{Collide\-Vector\-Pair}!Robot.cpp@{Robot\-Class.\-cpp}}
+\subsubsection[{Collide\-Vector\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::vector$<$ std\-::pair$<$int,char$>$ $>$ Collide\-Vector\-Pair}}\label{Robot_8cpp_a7f22ec3bcddc803dd2a219a2beb12ded}
+Method analyzes the target collisions to see whether it is colliding with its own target, some other target, both, or neither 

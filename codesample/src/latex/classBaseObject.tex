@@ -1,0 +1,234 @@
+\hypertarget{classBaseObject}{\section{Base\-Object Class Reference}
+\label{classBaseObject}\index{Base\-Object@{Base\-Object}}
+}
+Inheritance diagram for Base\-Object\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBaseObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBaseObject_ae6fa65bf33f26d46a6aa1a5ef9ee63c9}{Base\-Object} (char type, int speed\-Rating)
+\item 
+\hyperlink{classBaseObject_ababc1565c1eb8038f6c85886b9c3781c}{Base\-Object} (char type, int speed\-Rating, int size\-Rating)
+\item 
+\hyperlink{classBaseObject_a83eecfd3bdaffda4e6c7d0fb98747f96}{$\sim$\-Base\-Object} ()
+\item 
+int \hyperlink{classBaseObject_a6d4bd3f6a445bf8f4c304582e5a8c71d}{get\-I\-D} () const 
+\item 
+char \hyperlink{classBaseObject_ab333e5027b28d1dbe97736297efd1b94}{get\-Type} () const 
+\item 
+int \hyperlink{classBaseObject_a6dc634df2e679f28ab1435d494a3375e}{get\-Radius} () const 
+\item 
+int \hyperlink{classBaseObject_ac46f29b5be2bc1036115e5ee76f3996f}{get\-Speed} () const 
+\item 
+std\-::pair$<$ int, int $>$ \hyperlink{classBaseObject_a85cace89c6a85cb8e312e6e8a1decf29}{get\-Colors} () const 
+\item 
+void \hyperlink{classBaseObject_ad983298291c7600a244caebedd25bdfc}{set\-I\-D} (int id)
+\item 
+void \hyperlink{classBaseObject_a97b5625fa993c44e523f6f7be4230b4b}{set\-Type} (char type)
+\item 
+void \hyperlink{classBaseObject_a4157e3766c87cf1cda114a6239e1298c}{set\-Radius} (int radius)
+\item 
+void \hyperlink{classBaseObject_a662c7c9fd38d0dcfc102c737a0dbc5f8}{set\-Random\-Radius} ()
+\item 
+void \hyperlink{classBaseObject_a968935f7fc333e5ed67f7cbfe526720b}{set\-Speed} (int speed\-Rating)
+\item 
+void \hyperlink{classBaseObject_a33b50bfd5a5be9b504194aeadecc5e1e}{set\-Colors} (int primary, int secondary)
+\item 
+void \hyperlink{classBaseObject_ab89fb453f3e974db33f131bcce4559d6}{set\-Flags} (std\-::vector$<$ std\-::pair$<$ int, char $>$ $>$ colliding\-Objs)
+\item 
+\hypertarget{classBaseObject_a8608698c308c58ebf3a7f03541556b05}{virtual void {\bfseries sensor\-Scans} ()}\label{classBaseObject_a8608698c308c58ebf3a7f03541556b05}
+
+\item 
+\hypertarget{classBaseObject_a74591ce3c625f36937d43040557937f6}{virtual std\-::pair$<$ int, int $>$ {\bfseries move} (int elapsed\-Time)=0}\label{classBaseObject_a74591ce3c625f36937d43040557937f6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEnvironment}{Environment} $\ast$ \hyperlink{classBaseObject_a3f3c53a54006151370013c39262682c6}{get\-Env} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBaseObject_ad202362d71b6e41b168e88592c5c5fc0}{reset\-Flags} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBaseObject_ab21889ef86ffc1849898d2613ccdc75f}{int {\bfseries id}}\label{classBaseObject_ab21889ef86ffc1849898d2613ccdc75f}
+
+\item 
+\hypertarget{classBaseObject_a4bd0bd6f8e263af7621ec80b47ebbad1}{int {\bfseries radius}}\label{classBaseObject_a4bd0bd6f8e263af7621ec80b47ebbad1}
+
+\item 
+\hypertarget{classBaseObject_a77eb913a6f92fc275fdcc679d2377ed8}{int {\bfseries speed}}\label{classBaseObject_a77eb913a6f92fc275fdcc679d2377ed8}
+
+\item 
+\hypertarget{classBaseObject_acde20ad83b864b997b2e81b29303d25b}{char {\bfseries type}}\label{classBaseObject_acde20ad83b864b997b2e81b29303d25b}
+
+\item 
+\hypertarget{classBaseObject_a4e59f6ee35255ef92325f0edcd849e25}{std\-::pair$<$ int, int $>$ {\bfseries colors}}\label{classBaseObject_a4e59f6ee35255ef92325f0edcd849e25}
+
+\item 
+\hypertarget{classBaseObject_a16bede1971c3e62957ca033fd521ca8b}{bool {\bfseries collide\-Wall}}\label{classBaseObject_a16bede1971c3e62957ca033fd521ca8b}
+
+\item 
+\hypertarget{classBaseObject_ad22a16beb1d41db1107bef67e2346583}{bool {\bfseries collide\-Robot}}\label{classBaseObject_ad22a16beb1d41db1107bef67e2346583}
+
+\item 
+\hypertarget{classBaseObject_a7439c5dfdc2078ecccaaf820b3b0f521}{bool {\bfseries collide\-Obstacle}}\label{classBaseObject_a7439c5dfdc2078ecccaaf820b3b0f521}
+
+\item 
+\hypertarget{classBaseObject_a9ac15037c8c2b321eb746957306d43f2}{bool {\bfseries collide\-Target}}\label{classBaseObject_a9ac15037c8c2b321eb746957306d43f2}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEnvironment}{Environment} $\ast$ \hyperlink{classBaseObject_adf47773f2b71699caa9560be64ccfbbe}{env}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBaseObject_ae6fa65bf33f26d46a6aa1a5ef9ee63c9}{\index{Base\-Object@{Base\-Object}!Base\-Object@{Base\-Object}}
+\index{Base\-Object@{Base\-Object}!BaseObject@{Base\-Object}}
+\subsubsection[{Base\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::\-Base\-Object (
+\begin{DoxyParamCaption}
+\item[{char}]{type, }
+\item[{int}]{speed\-Rating}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_ae6fa65bf33f26d46a6aa1a5ef9ee63c9}
+Constructor for the physical objects, which are parents of the other derived types. sets the object with a random speed. \hypertarget{classBaseObject_ababc1565c1eb8038f6c85886b9c3781c}{\index{Base\-Object@{Base\-Object}!Base\-Object@{Base\-Object}}
+\index{Base\-Object@{Base\-Object}!BaseObject@{Base\-Object}}
+\subsubsection[{Base\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::\-Base\-Object (
+\begin{DoxyParamCaption}
+\item[{char}]{type, }
+\item[{int}]{speed\-Rating, }
+\item[{int}]{size\-Rating}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_ababc1565c1eb8038f6c85886b9c3781c}
+Constructor for physical objects, which are parents of other derived types. \hypertarget{classBaseObject_a83eecfd3bdaffda4e6c7d0fb98747f96}{\index{Base\-Object@{Base\-Object}!$\sim$\-Base\-Object@{$\sim$\-Base\-Object}}
+\index{$\sim$\-Base\-Object@{$\sim$\-Base\-Object}!BaseObject@{Base\-Object}}
+\subsubsection[{$\sim$\-Base\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::$\sim$\-Base\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a83eecfd3bdaffda4e6c7d0fb98747f96}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBaseObject_a85cace89c6a85cb8e312e6e8a1decf29}{\index{Base\-Object@{Base\-Object}!get\-Colors@{get\-Colors}}
+\index{get\-Colors@{get\-Colors}!BaseObject@{Base\-Object}}
+\subsubsection[{get\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}std\-::pair$<$ int, int $>$ Base\-Object\-::get\-Colors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classBaseObject_a85cace89c6a85cb8e312e6e8a1decf29}
+method which returns the primary and secondary colors of the object \hypertarget{classBaseObject_a3f3c53a54006151370013c39262682c6}{\index{Base\-Object@{Base\-Object}!get\-Env@{get\-Env}}
+\index{get\-Env@{get\-Env}!BaseObject@{Base\-Object}}
+\subsubsection[{get\-Env}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Environment} $\ast$ Base\-Object\-::get\-Env (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classBaseObject_a3f3c53a54006151370013c39262682c6}
+Method which returns a pointer to the static environment member variable \hypertarget{classBaseObject_a6d4bd3f6a445bf8f4c304582e5a8c71d}{\index{Base\-Object@{Base\-Object}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!BaseObject@{Base\-Object}}
+\subsubsection[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Object\-::get\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classBaseObject_a6d4bd3f6a445bf8f4c304582e5a8c71d}
+Method which returns the id of the object \hypertarget{classBaseObject_a6dc634df2e679f28ab1435d494a3375e}{\index{Base\-Object@{Base\-Object}!get\-Radius@{get\-Radius}}
+\index{get\-Radius@{get\-Radius}!BaseObject@{Base\-Object}}
+\subsubsection[{get\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Object\-::get\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classBaseObject_a6dc634df2e679f28ab1435d494a3375e}
+Method which returns the radius of the object \hypertarget{classBaseObject_ac46f29b5be2bc1036115e5ee76f3996f}{\index{Base\-Object@{Base\-Object}!get\-Speed@{get\-Speed}}
+\index{get\-Speed@{get\-Speed}!BaseObject@{Base\-Object}}
+\subsubsection[{get\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Object\-::get\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classBaseObject_ac46f29b5be2bc1036115e5ee76f3996f}
+Method which returns the speed of the object \hypertarget{classBaseObject_ab333e5027b28d1dbe97736297efd1b94}{\index{Base\-Object@{Base\-Object}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!BaseObject@{Base\-Object}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}char Base\-Object\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classBaseObject_ab333e5027b28d1dbe97736297efd1b94}
+Method which returns the type of the object \hypertarget{classBaseObject_ad202362d71b6e41b168e88592c5c5fc0}{\index{Base\-Object@{Base\-Object}!reset\-Flags@{reset\-Flags}}
+\index{reset\-Flags@{reset\-Flags}!BaseObject@{Base\-Object}}
+\subsubsection[{reset\-Flags}]{\setlength{\rightskip}{0pt plus 5cm}void Base\-Object\-::reset\-Flags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classBaseObject_ad202362d71b6e41b168e88592c5c5fc0}
+Method which resets all collision flags to false \hypertarget{classBaseObject_a33b50bfd5a5be9b504194aeadecc5e1e}{\index{Base\-Object@{Base\-Object}!set\-Colors@{set\-Colors}}
+\index{set\-Colors@{set\-Colors}!BaseObject@{Base\-Object}}
+\subsubsection[{set\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}void Base\-Object\-::set\-Colors (
+\begin{DoxyParamCaption}
+\item[{int}]{primary, }
+\item[{int}]{secondary}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a33b50bfd5a5be9b504194aeadecc5e1e}
+Method which sets the primary and secondary colors of the object. Note that these values are simply set to integers. only the graphics display cares about actual colors. In this scope integers are sufficient since all that matters is that objects with different colors are drawn differently \hypertarget{classBaseObject_ab89fb453f3e974db33f131bcce4559d6}{\index{Base\-Object@{Base\-Object}!set\-Flags@{set\-Flags}}
+\index{set\-Flags@{set\-Flags}!BaseObject@{Base\-Object}}
+\subsubsection[{set\-Flags}]{\setlength{\rightskip}{0pt plus 5cm}void Base\-Object\-::set\-Flags (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ std\-::pair$<$ int, char $>$ $>$}]{colliding\-Objs}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_ab89fb453f3e974db33f131bcce4559d6}
+Method which sets flags based on current collision values \hypertarget{classBaseObject_ad983298291c7600a244caebedd25bdfc}{\index{Base\-Object@{Base\-Object}!set\-I\-D@{set\-I\-D}}
+\index{set\-I\-D@{set\-I\-D}!BaseObject@{Base\-Object}}
+\subsubsection[{set\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void Base\-Object\-::set\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_ad983298291c7600a244caebedd25bdfc}
+Sets the object I\-D \hypertarget{classBaseObject_a4157e3766c87cf1cda114a6239e1298c}{\index{Base\-Object@{Base\-Object}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!BaseObject@{Base\-Object}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}void Base\-Object\-::set\-Radius (
+\begin{DoxyParamCaption}
+\item[{int}]{size\-Rating}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a4157e3766c87cf1cda114a6239e1298c}
+Method which sets the radius of the object based on a size rating from 0 to 100 \hypertarget{classBaseObject_a662c7c9fd38d0dcfc102c737a0dbc5f8}{\index{Base\-Object@{Base\-Object}!set\-Random\-Radius@{set\-Random\-Radius}}
+\index{set\-Random\-Radius@{set\-Random\-Radius}!BaseObject@{Base\-Object}}
+\subsubsection[{set\-Random\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}void Base\-Object\-::set\-Random\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a662c7c9fd38d0dcfc102c737a0dbc5f8}
+Method which computes a random size rating and sets the object radius accordingly \hypertarget{classBaseObject_a968935f7fc333e5ed67f7cbfe526720b}{\index{Base\-Object@{Base\-Object}!set\-Speed@{set\-Speed}}
+\index{set\-Speed@{set\-Speed}!BaseObject@{Base\-Object}}
+\subsubsection[{set\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Base\-Object\-::set\-Speed (
+\begin{DoxyParamCaption}
+\item[{int}]{speed\-Rating}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a968935f7fc333e5ed67f7cbfe526720b}
+Method which sets the speed of the object based on a speed rating between 0 and 100 \hypertarget{classBaseObject_a97b5625fa993c44e523f6f7be4230b4b}{\index{Base\-Object@{Base\-Object}!set\-Type@{set\-Type}}
+\index{set\-Type@{set\-Type}!BaseObject@{Base\-Object}}
+\subsubsection[{set\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Base\-Object\-::set\-Type (
+\begin{DoxyParamCaption}
+\item[{char}]{type}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a97b5625fa993c44e523f6f7be4230b4b}
+Method which returns the type of the object. 'r' for robot, 'o' for obstacle, 't' for target 
+
+\subsection{Member Data Documentation}
+\hypertarget{classBaseObject_adf47773f2b71699caa9560be64ccfbbe}{\index{Base\-Object@{Base\-Object}!env@{env}}
+\index{env@{env}!BaseObject@{Base\-Object}}
+\subsubsection[{env}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Environment} $\ast$ Base\-Object\-::env\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classBaseObject_adf47773f2b71699caa9560be64ccfbbe}
+Defining the static env member variable 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BaseObject_8hpp}{Base\-Object.\-hpp}\item 
+Base\-Object.\-cpp\end{DoxyCompactItemize}

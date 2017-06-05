@@ -1,0 +1,191 @@
+\hypertarget{classAgent}{\section{Agent Class Reference}
+\label{classAgent}\index{Agent@{Agent}}
+}
+
+
+{\ttfamily \#include $<$Agent.\-h$>$}
+
+Inheritance diagram for Agent\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAgent}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAgent_afc61ed889ca97b17b33a3672f672816d}{Agent} (const \hyperlink{classWalls}{Walls} \&walls, const std\-::vector$<$ \hyperlink{classAgent}{Agent} $>$ \&objects, int radius)
+\item 
+\hyperlink{classAgent_ab8dd8d152605cf1339fed595376e83cb}{$\sim$\-Agent} ()
+\item 
+void \hyperlink{classAgent_a5d714dac466b3ac67fa8c7922ad16e32}{set\-Position} (int x, int y)
+\item 
+void \hyperlink{classAgent_ae5421a419adc7a6baaf62657771b58a8}{set\-Orientation} (int degrees)
+\item 
+void \hyperlink{classAgent_a95a0e20717bc2a97b31297c7fe359edf}{set\-Speed} (int pps)
+\item 
+void \hyperlink{classAgent_a56f8cf41867560850cf4a8f06a8fb73a}{set\-Radius} (int radius)
+\item 
+int \hyperlink{classAgent_aba769a0dc44309d432ff7f4187042bf1}{get\-X\-Position} () const 
+\item 
+int \hyperlink{classAgent_abd92e3a22a129c3714fbeddfc884c2da}{get\-Y\-Position} () const 
+\item 
+int \hyperlink{classAgent_ac2cdb165917961b3e0eddf63d1e8d4ad}{get\-Orientation} () const 
+\item 
+int \hyperlink{classAgent_aa4d6903e90ac8b43a0ba8a1b976b1e17}{get\-Speed} () const 
+\item 
+int \hyperlink{classAgent_a624340216590b8ac5e74ba5206eb5c76}{get\-Radius} () const 
+\item 
+bool \hyperlink{classAgent_afc5a6ffaacf9c65e9cb39220b82b89ab}{detect\-Wall} (const \hyperlink{classWalls}{Walls} \&walls) const 
+\item 
+bool \hyperlink{classAgent_a89fc8e0caac6f98f818fcf6e58e78c78}{detect\-Agent} (const \hyperlink{classAgent}{Agent} \&object) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAgent}{Agent}. This provides means to store and alter agent state. \hyperlink{classRobot}{Robot\-Class} and Obstacle inheret from this class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAgent_afc61ed889ca97b17b33a3672f672816d}{\index{Agent@{Agent}!Agent@{Agent}}
+\index{Agent@{Agent}!Agent@{Agent}}
+\subsubsection[{Agent}]{\setlength{\rightskip}{0pt plus 5cm}Agent\-::\-Agent (
+\begin{DoxyParamCaption}
+\item[{const {\bf Walls} \&}]{walls, }
+\item[{const std\-::vector$<$ {\bf Agent} $>$ \&}]{objects, }
+\item[{int}]{radius}
+\end{DoxyParamCaption}
+)}}\label{classAgent_afc61ed889ca97b17b33a3672f672816d}
+The constructor for an \hyperlink{classAgent}{Agent}. It requires three parameters\-: the walls, a vector of Agents, and the radius of the agent. 
+\begin{DoxyParams}{Parameters}
+{\em walls} & The walls forming the boundaries of the movable area. \\
+\hline
+{\em objects} & A vector of objects that the agent uses to keep track of other agents that are also currently being displayed. \\
+\hline
+{\em radius} & The radius of the agent in pixels. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classAgent_ab8dd8d152605cf1339fed595376e83cb}{\index{Agent@{Agent}!$\sim$\-Agent@{$\sim$\-Agent}}
+\index{$\sim$\-Agent@{$\sim$\-Agent}!Agent@{Agent}}
+\subsubsection[{$\sim$\-Agent}]{\setlength{\rightskip}{0pt plus 5cm}Agent\-::$\sim$\-Agent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAgent_ab8dd8d152605cf1339fed595376e83cb}
+The destructor for \hyperlink{classAgent}{Agent}. It frees an \hyperlink{classAgent}{Agent} from memory. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classAgent_a89fc8e0caac6f98f818fcf6e58e78c78}{\index{Agent@{Agent}!detect\-Agent@{detect\-Agent}}
+\index{detect\-Agent@{detect\-Agent}!Agent@{Agent}}
+\subsubsection[{detect\-Agent}]{\setlength{\rightskip}{0pt plus 5cm}bool Agent\-::detect\-Agent (
+\begin{DoxyParamCaption}
+\item[{const {\bf Agent} \&}]{object}
+\end{DoxyParamCaption}
+) const}}\label{classAgent_a89fc8e0caac6f98f818fcf6e58e78c78}
+Detects collisions between Agents. Returns true if the \hyperlink{classAgent}{Agent} is colliding wit object, returns false otherwse. 
+\begin{DoxyParams}{Parameters}
+{\em object} & An \hyperlink{classAgent}{Agent}. \\
+\hline
+\end{DoxyParams}
+If the square of the distance between two agents is less than or equal to the sum of each radius then the agents overlap and this returns true \hypertarget{classAgent_afc5a6ffaacf9c65e9cb39220b82b89ab}{\index{Agent@{Agent}!detect\-Wall@{detect\-Wall}}
+\index{detect\-Wall@{detect\-Wall}!Agent@{Agent}}
+\subsubsection[{detect\-Wall}]{\setlength{\rightskip}{0pt plus 5cm}bool Agent\-::detect\-Wall (
+\begin{DoxyParamCaption}
+\item[{const {\bf Walls} \&}]{walls}
+\end{DoxyParamCaption}
+) const}}\label{classAgent_afc5a6ffaacf9c65e9cb39220b82b89ab}
+Detects collisions between an \hyperlink{classAgent}{Agent} and a wall. Returns true if an \hyperlink{classAgent}{Agent} is colliding with a wall, returns false otherwise. 
+\begin{DoxyParams}{Parameters}
+{\em walls} & The \hyperlink{classWalls}{Walls}. \\
+\hline
+\end{DoxyParams}
+Wall attributes are obtained
+
+Each wall is checked to determine whether the agent is inside or not
+
+Returns true if any of the walls overlapped the agent \hypertarget{classAgent_ac2cdb165917961b3e0eddf63d1e8d4ad}{\index{Agent@{Agent}!get\-Orientation@{get\-Orientation}}
+\index{get\-Orientation@{get\-Orientation}!Agent@{Agent}}
+\subsubsection[{get\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}int Agent\-::get\-Orientation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classAgent_ac2cdb165917961b3e0eddf63d1e8d4ad}
+Returns the current orientation of the \hyperlink{classAgent}{Agent} in degrees. \hypertarget{classAgent_a624340216590b8ac5e74ba5206eb5c76}{\index{Agent@{Agent}!get\-Radius@{get\-Radius}}
+\index{get\-Radius@{get\-Radius}!Agent@{Agent}}
+\subsubsection[{get\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}int Agent\-::get\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classAgent_a624340216590b8ac5e74ba5206eb5c76}
+Returns the current radius of the \hyperlink{classAgent}{Agent} in pixels. \hypertarget{classAgent_aa4d6903e90ac8b43a0ba8a1b976b1e17}{\index{Agent@{Agent}!get\-Speed@{get\-Speed}}
+\index{get\-Speed@{get\-Speed}!Agent@{Agent}}
+\subsubsection[{get\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}int Agent\-::get\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classAgent_aa4d6903e90ac8b43a0ba8a1b976b1e17}
+Returns the current speed of the \hyperlink{classAgent}{Agent} in pixels per second. \hypertarget{classAgent_aba769a0dc44309d432ff7f4187042bf1}{\index{Agent@{Agent}!get\-X\-Position@{get\-X\-Position}}
+\index{get\-X\-Position@{get\-X\-Position}!Agent@{Agent}}
+\subsubsection[{get\-X\-Position}]{\setlength{\rightskip}{0pt plus 5cm}int Agent\-::get\-X\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classAgent_aba769a0dc44309d432ff7f4187042bf1}
+Returns the current x position of the \hyperlink{classAgent}{Agent} in pixels. \hypertarget{classAgent_abd92e3a22a129c3714fbeddfc884c2da}{\index{Agent@{Agent}!get\-Y\-Position@{get\-Y\-Position}}
+\index{get\-Y\-Position@{get\-Y\-Position}!Agent@{Agent}}
+\subsubsection[{get\-Y\-Position}]{\setlength{\rightskip}{0pt plus 5cm}int Agent\-::get\-Y\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classAgent_abd92e3a22a129c3714fbeddfc884c2da}
+Returns the current y position of the \hyperlink{classAgent}{Agent} in pixels. \hypertarget{classAgent_ae5421a419adc7a6baaf62657771b58a8}{\index{Agent@{Agent}!set\-Orientation@{set\-Orientation}}
+\index{set\-Orientation@{set\-Orientation}!Agent@{Agent}}
+\subsubsection[{set\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-::set\-Orientation (
+\begin{DoxyParamCaption}
+\item[{int}]{degrees}
+\end{DoxyParamCaption}
+)}}\label{classAgent_ae5421a419adc7a6baaf62657771b58a8}
+Changes the orientation of the \hyperlink{classAgent}{Agent}. /param degrees The new orientation of the \hyperlink{classAgent}{Agent} in degrees. If the angle is negative or outside the range 0 $<$= degrees $<$= 360, then the modulus operator and arithmetic shift of 360 forces it into the correct range.\hypertarget{classAgent_a5d714dac466b3ac67fa8c7922ad16e32}{\index{Agent@{Agent}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!Agent@{Agent}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classAgent_a5d714dac466b3ac67fa8c7922ad16e32}
+Changes the x and y position of the \hyperlink{classAgent}{Agent}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The new x position of the \hyperlink{classAgent}{Agent} in pixels. \\
+\hline
+{\em y} & The new y position of the \hyperlink{classAgent}{Agent} in pixels. \\
+\hline
+\end{DoxyParams}
+If either x or y input is negative, the internally stored x and y defaults to zero.\hypertarget{classAgent_a56f8cf41867560850cf4a8f06a8fb73a}{\index{Agent@{Agent}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!Agent@{Agent}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-::set\-Radius (
+\begin{DoxyParamCaption}
+\item[{int}]{radius}
+\end{DoxyParamCaption}
+)}}\label{classAgent_a56f8cf41867560850cf4a8f06a8fb73a}
+Changes the radius of the \hyperlink{classAgent}{Agent}. 
+\begin{DoxyParams}{Parameters}
+{\em radius} & The new radius of the \hyperlink{classAgent}{Agent} in pixels. \\
+\hline
+\end{DoxyParams}
+If the radius input is negative, it gets set to zero by default \hypertarget{classAgent_a95a0e20717bc2a97b31297c7fe359edf}{\index{Agent@{Agent}!set\-Speed@{set\-Speed}}
+\index{set\-Speed@{set\-Speed}!Agent@{Agent}}
+\subsubsection[{set\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-::set\-Speed (
+\begin{DoxyParamCaption}
+\item[{int}]{pps}
+\end{DoxyParamCaption}
+)}}\label{classAgent_a95a0e20717bc2a97b31297c7fe359edf}
+Changes the speed of the \hyperlink{classAgent}{Agent}. 
+\begin{DoxyParams}{Parameters}
+{\em pps} & The new speed of the \hyperlink{classAgent}{Agent} in pixels per second. \\
+\hline
+\end{DoxyParams}
+If the speed input is negative, it gets set to zero by default 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Agent_8h}{Agent.\-h}\item 
+\hyperlink{Agent_8cpp}{Agent.\-cpp}\end{DoxyCompactItemize}

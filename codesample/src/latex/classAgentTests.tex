@@ -1,0 +1,185 @@
+\hypertarget{classAgentTests}{\section{Agent\-Tests Class Reference}
+\label{classAgentTests}\index{Agent\-Tests@{Agent\-Tests}}
+}
+Inheritance diagram for Agent\-Tests\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAgentTests}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAgentTests_aa1916eb6d1959cbcff228f754d867a7a}{Test\-\_\-point\-To} (void)
+\item 
+void \hyperlink{classAgentTests_a66770690a4935c28827b07e9af99c6b0}{Test\-\_\-detect\-Wall} (void)
+\item 
+void \hyperlink{classAgentTests_a8893a3644afd6f018ea7c79151f2b9bb}{Test\-\_\-\-Detect\-Agent} (void)
+\item 
+void \hyperlink{classAgentTests_a5d65e90adfcccdc486a7c4e115ca8551}{Test\-\_\-\-Valid\-Initialization} (void)
+\item 
+void \hyperlink{classAgentTests_a79e72db600ce8f14e0f09a66d64ff1c0}{Test\-\_\-set\-Position} (void)
+\item 
+void \hyperlink{classAgentTests_a68bb8b102aa21b1841d7092ef34af4e9}{Test\-\_\-set\-Orientation} (void)
+\item 
+void \hyperlink{classAgentTests_ae52314b8f6bf850ab42905c5beeb4ddb}{Test\-\_\-set\-Speed} (void)
+\item 
+void \hyperlink{classAgentTests_aae3a3dee04a28d74fdd879f9ce965e3e}{Test\-\_\-set\-Radius} (void)
+\item 
+void \hyperlink{classAgentTests_a3ae988bf6d1f75e02296dcf99fc4ed31}{Test\-\_\-translate} (void)
+\item 
+void \hyperlink{classAgentTests_aba2962f44be5d40c14f146d878c56ed3}{Test\-\_\-rotate} (void)
+\item 
+void \hyperlink{classAgentTests_a50efe314bfeb1965d13a5a71eec8e703}{Test\-\_\-update\-Position} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAgentTests_a8893a3644afd6f018ea7c79151f2b9bb}{\index{Agent\-Tests@{Agent\-Tests}!Test\-\_\-\-Detect\-Agent@{Test\-\_\-\-Detect\-Agent}}
+\index{Test\-\_\-\-Detect\-Agent@{Test\-\_\-\-Detect\-Agent}!AgentTests@{Agent\-Tests}}
+\subsubsection[{Test\-\_\-\-Detect\-Agent}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-Tests\-::\-Test\-\_\-\-Detect\-Agent (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAgentTests_a8893a3644afd6f018ea7c79151f2b9bb}
+This tests Agent\-::detect\-Agent(const Agent\&). It is inherited by \hyperlink{classRobot}{Robot\-Class}, \hyperlink{classTarget}{Target\-Class}, and \hyperlink{classObstacle}{Obstacle\-Class}. The test is performed only on the parent since the results are assumed to be the same for the children. Creating walls and two agents
+
+Placing the agents so one is completely inside the other
+
+Placing the agents so they do not overlap at all
+
+Placing the agents so their overlapping area is nonzero but neither is completely inside of the other
+
+Placing the agents so they intersect at a single point \hypertarget{classAgentTests_a66770690a4935c28827b07e9af99c6b0}{\index{Agent\-Tests@{Agent\-Tests}!Test\-\_\-detect\-Wall@{Test\-\_\-detect\-Wall}}
+\index{Test\-\_\-detect\-Wall@{Test\-\_\-detect\-Wall}!AgentTests@{Agent\-Tests}}
+\subsubsection[{Test\-\_\-detect\-Wall}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-Tests\-::\-Test\-\_\-detect\-Wall (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAgentTests_a66770690a4935c28827b07e9af99c6b0}
+This tests Agent\-::detect\-Wall(const Wall\&). It is inherited by \hyperlink{classRobot}{Robot\-Class}, \hyperlink{classTarget}{Target\-Class}, and \hyperlink{classObstacle}{Obstacle\-Class}. The test is performed only on the parent since the results are assumed to be the same for the children. Creating walls and an agent
+
+Placing the agent so it doesn't touch any walls
+
+Placing the agent in various positions so it touches the four walls, each time only at a single point.
+
+Placing the agent in various positions so it touches the four walls, each time with visible overlap.\hypertarget{classAgentTests_aa1916eb6d1959cbcff228f754d867a7a}{\index{Agent\-Tests@{Agent\-Tests}!Test\-\_\-point\-To@{Test\-\_\-point\-To}}
+\index{Test\-\_\-point\-To@{Test\-\_\-point\-To}!AgentTests@{Agent\-Tests}}
+\subsubsection[{Test\-\_\-point\-To}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-Tests\-::\-Test\-\_\-point\-To (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAgentTests_aa1916eb6d1959cbcff228f754d867a7a}
+This tests \hyperlink{classRobot_a6775a1d2aaa2dbe1b963932cc3714d0d}{Robot\-Class\-::point\-To(const Target\-Class\&)}. When called, the robot should align itself with the target Creating walls, a robot, and a target. The robot and target are randomly placed on the screen in such a way that they don't overlap
+
+The robot is placed at a fixed position of (400,400)
+
+Placing the target directly to the right of the robot
+
+Placing the target directly above the robot
+
+Placing the target diretly to the left of the robot
+
+Placing the target directly below the robot
+
+Placing the robot and target at arbitrary positions \hypertarget{classAgentTests_aba2962f44be5d40c14f146d878c56ed3}{\index{Agent\-Tests@{Agent\-Tests}!Test\-\_\-rotate@{Test\-\_\-rotate}}
+\index{Test\-\_\-rotate@{Test\-\_\-rotate}!AgentTests@{Agent\-Tests}}
+\subsubsection[{Test\-\_\-rotate}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-Tests\-::\-Test\-\_\-rotate (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAgentTests_aba2962f44be5d40c14f146d878c56ed3}
+Test of \hyperlink{classRobot_af0a67d59620139069f981da208a7a28d}{Robot\-Class\-::rotate(int)} Note\-: Current this test is of an empty method. Thus, by default it always passes. Set up \hyperlink{classWalls}{Walls} and no objects, and a robot
+
+Rotate Robot.
+
+Test values. \hypertarget{classAgentTests_a68bb8b102aa21b1841d7092ef34af4e9}{\index{Agent\-Tests@{Agent\-Tests}!Test\-\_\-set\-Orientation@{Test\-\_\-set\-Orientation}}
+\index{Test\-\_\-set\-Orientation@{Test\-\_\-set\-Orientation}!AgentTests@{Agent\-Tests}}
+\subsubsection[{Test\-\_\-set\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-Tests\-::\-Test\-\_\-set\-Orientation (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAgentTests_a68bb8b102aa21b1841d7092ef34af4e9}
+Test of \hyperlink{classAgent_ae5421a419adc7a6baaf62657771b58a8}{Agent\-::set\-Orientation(int degrees)} Creating the walls, vector of agents, and the robot
+
+Setting angle of 50 deg and confirming that 50 deg is stored.
+
+Setting angle of 360 deg and confirming that 0 deg is stored.
+
+Setting angle of 370 deg and confirming that 10 deg is stored.
+
+Setting angle of -\/150 deg and confirming that 210 deg is stored.
+
+Setting angle of -\/1080 deg and confirming that 0 deg is stored. \hypertarget{classAgentTests_a79e72db600ce8f14e0f09a66d64ff1c0}{\index{Agent\-Tests@{Agent\-Tests}!Test\-\_\-set\-Position@{Test\-\_\-set\-Position}}
+\index{Test\-\_\-set\-Position@{Test\-\_\-set\-Position}!AgentTests@{Agent\-Tests}}
+\subsubsection[{Test\-\_\-set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-Tests\-::\-Test\-\_\-set\-Position (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAgentTests_a79e72db600ce8f14e0f09a66d64ff1c0}
+Test of \hyperlink{classAgent_a5d714dac466b3ac67fa8c7922ad16e32}{Agent\-::set\-Position(int x, int y)} Creating the walls, vector of agents, and the robot
+
+Setting robot position to (200,200) and confirming (200,200) is stored
+
+Setting robot position to (-\/123,-\/245) and confirming (0,0) is stored \hypertarget{classAgentTests_aae3a3dee04a28d74fdd879f9ce965e3e}{\index{Agent\-Tests@{Agent\-Tests}!Test\-\_\-set\-Radius@{Test\-\_\-set\-Radius}}
+\index{Test\-\_\-set\-Radius@{Test\-\_\-set\-Radius}!AgentTests@{Agent\-Tests}}
+\subsubsection[{Test\-\_\-set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-Tests\-::\-Test\-\_\-set\-Radius (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAgentTests_aae3a3dee04a28d74fdd879f9ce965e3e}
+Test of \hyperlink{classAgent_a56f8cf41867560850cf4a8f06a8fb73a}{Agent\-::set\-Radius(int radius)} Creating the walls, vector of agents, and the robot
+
+Setting a positive radius and confirming the stored radius is the same.
+
+Setting a negative radius and confirming the stored radius is zero. \hypertarget{classAgentTests_ae52314b8f6bf850ab42905c5beeb4ddb}{\index{Agent\-Tests@{Agent\-Tests}!Test\-\_\-set\-Speed@{Test\-\_\-set\-Speed}}
+\index{Test\-\_\-set\-Speed@{Test\-\_\-set\-Speed}!AgentTests@{Agent\-Tests}}
+\subsubsection[{Test\-\_\-set\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-Tests\-::\-Test\-\_\-set\-Speed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAgentTests_ae52314b8f6bf850ab42905c5beeb4ddb}
+Test of \hyperlink{classAgent_a95a0e20717bc2a97b31297c7fe359edf}{Agent\-::set\-Speed(int pps)} Creating the walls, vector of agents, and the robot
+
+Setting a positive speed and confirming the stored speed is the same.
+
+Setting a negative speed and confirming the stored speed is zero. \hypertarget{classAgentTests_a3ae988bf6d1f75e02296dcf99fc4ed31}{\index{Agent\-Tests@{Agent\-Tests}!Test\-\_\-translate@{Test\-\_\-translate}}
+\index{Test\-\_\-translate@{Test\-\_\-translate}!AgentTests@{Agent\-Tests}}
+\subsubsection[{Test\-\_\-translate}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-Tests\-::\-Test\-\_\-translate (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAgentTests_a3ae988bf6d1f75e02296dcf99fc4ed31}
+Test of \hyperlink{classRobot_aea48d75ac942eef8e7d0891784f48e0b}{Robot\-Class\-::translate(int)} Note\-: Current this test is of an empty method. Thus, by default it always passes. Set up \hyperlink{classWalls}{Walls} and no objects, and a robot
+
+Translate Robot.
+
+Test values. \hypertarget{classAgentTests_a50efe314bfeb1965d13a5a71eec8e703}{\index{Agent\-Tests@{Agent\-Tests}!Test\-\_\-update\-Position@{Test\-\_\-update\-Position}}
+\index{Test\-\_\-update\-Position@{Test\-\_\-update\-Position}!AgentTests@{Agent\-Tests}}
+\subsubsection[{Test\-\_\-update\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-Tests\-::\-Test\-\_\-update\-Position (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAgentTests_a50efe314bfeb1965d13a5a71eec8e703}
+Test of \hyperlink{classRobot_a7fee29fbe51ae19d6ff42a525e802272}{Robot\-Class\-::update\-Position(int)} Note\-: Current this test is of an empty method. Thus, by default it always passes. Set up \hyperlink{classWalls}{Walls} and no objects, and a robot
+
+Update the Robot's position.
+
+Test values. \hypertarget{classAgentTests_a5d65e90adfcccdc486a7c4e115ca8551}{\index{Agent\-Tests@{Agent\-Tests}!Test\-\_\-\-Valid\-Initialization@{Test\-\_\-\-Valid\-Initialization}}
+\index{Test\-\_\-\-Valid\-Initialization@{Test\-\_\-\-Valid\-Initialization}!AgentTests@{Agent\-Tests}}
+\subsubsection[{Test\-\_\-\-Valid\-Initialization}]{\setlength{\rightskip}{0pt plus 5cm}void Agent\-Tests\-::\-Test\-\_\-\-Valid\-Initialization (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAgentTests_a5d65e90adfcccdc486a7c4e115ca8551}
+This is a composite test which analyzes the initialization of agents. It tests to make sure the agents do not overlap on the screen. Setting the random seed, creating the walls, and empty vector of agents.
+
+Looping over 10,000 test scenarios
+
+A robot is created, followed by an obstacle. Their constructors give them random positions which allegegly do not overlap each other or any the walls. This is verified explicitly.
+
+The test fails if either the robot or obstacle overlapped something 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{agentTests_8h}{agent\-Tests.\-h}\end{DoxyCompactItemize}
