@@ -418,7 +418,7 @@ int Environment::ObjectData::getXPosition() const {
     return x;
 }
 
-/*! Returns the current y position of the Object in pixels. */	            
+/*! Returns the current y position of the Object in pixels. */                
 int Environment::ObjectData::getYPosition() const {
     return y;
 }

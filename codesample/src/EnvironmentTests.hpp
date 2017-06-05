@@ -31,8 +31,8 @@ public:
 
 
        void testGetWalls(void){
-        Environment* env = new Environment(800,800,400);	
-		Walls* walls = env->getWalls();
+        Environment* env = new Environment(800,800,400);    
+        Walls* walls = env->getWalls();
         //test width
         int expected_one = 800*400; 
         int actual_one = walls->getWidth();

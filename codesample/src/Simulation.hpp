@@ -22,7 +22,7 @@
 class Simulation : public BaseGfxApp {
     public: 
 
-		/*! User interface control types */
+        /*! User interface control types */
         enum UIControlType {
           UI_QUIT = 0,
           UI_START = 1,
@@ -65,7 +65,7 @@ class Simulation : public BaseGfxApp {
         /*! Pointer to the environment */
         Environment* env;
 
-		/*! Total time (in seconds) since the simulation began */
+        /*! Total time (in seconds) since the simulation began */
         int totalTimeSinceStart;
         
         /*! Time (in seconds) elapsed since the previous update */
@@ -74,10 +74,10 @@ class Simulation : public BaseGfxApp {
         /*! Factor by which to scale the display */
         static const int scaleFactor = 1000;
 
-		/*! Vector containing all the color codes. Each element is an RGB tuple */
+        /*! Vector containing all the color codes. Each element is an RGB tuple */
         std::vector< std::tuple < float, float, float > > colorCodesVector;
 
-		/*! Update the rendering of everything in the environment */
+        /*! Update the rendering of everything in the environment */
         void renderEnvironment() const;
         
         

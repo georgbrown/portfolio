@@ -19,9 +19,9 @@ class Robot : public BaseObject {
 
     public:
 
-		/*! Robot Constructor.
-		 * \param speedRating A standardized speed scale rating which is used to set the actual robot speed.
-		 * \param sizeRating A standardized size scale rating which is used to set the actual robot radius. */
+        /*! Robot Constructor.
+         * \param speedRating A standardized speed scale rating which is used to set the actual robot speed.
+         * \param sizeRating A standardized size scale rating which is used to set the actual robot radius. */
         Robot(int speedRating, int sizeRating);
         
         
@@ -47,10 +47,10 @@ class Robot : public BaseObject {
         bool getCollideMyTarget() const;
 
     
-		/*! Determines the angle to turn and the distance to travel for the robot to reach its current target.
-		 *  This data is returned as a pair of integers, with the first being the angle in degrees, and the second
-		 *  being the distance to the target.
-		 *  \param elapsedTime The time which has elapsed (in seconds) since the last update. */
+        /*! Determines the angle to turn and the distance to travel for the robot to reach its current target.
+         *  This data is returned as a pair of integers, with the first being the angle in degrees, and the second
+         *  being the distance to the target.
+         *  \param elapsedTime The time which has elapsed (in seconds) since the last update. */
         std::pair<int,int> move( int elapsedTime );
 
     private:
@@ -71,8 +71,8 @@ class Robot : public BaseObject {
         bool collideOtherTarget;
 
 
-		/*! Type definition for collision data. A vector container of pairs. The first element is the target ID number,
-		 *  the second is a char which identifies the type of collision */
+        /*! Type definition for collision data. A vector container of pairs. The first element is the target ID number,
+         *  the second is a char which identifies the type of collision */
         typedef std::vector< std::pair<int,char> > CollideVectorPair; 
         
         

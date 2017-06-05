@@ -19,7 +19,7 @@
 class Obstacle : public BaseObject{
 
     public:
-	
+    
         /*! The constructor for the Obstacle
          * \param speedRating The speed setting for a newly created obstacle */
         Obstacle(int speedRating);

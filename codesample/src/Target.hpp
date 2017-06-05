@@ -19,9 +19,9 @@ class Target : public BaseObject{
 
     public:
     
-		/*! Target Constructor.
-		 * \param speedRating A standardized speed scale rating which is used to set the actual target speed.
-		 * \param sizeRating A standardized size scale rating which is used to set the actual target radius. */
+        /*! Target Constructor.
+         * \param speedRating A standardized speed scale rating which is used to set the actual target speed.
+         * \param sizeRating A standardized size scale rating which is used to set the actual target radius. */
         Target(int speedRating, int sizeRating);
 
 
@@ -29,10 +29,10 @@ class Target : public BaseObject{
         ~Target();
     
     
-		/*! Determines the angle to turn and the distance to travel for the next update to the target. 
-		 *  This data is returned as a pair of integers, with the first being the angle in degrees, and the second
-		 *  being the distance to travel.
-		 *  \param elapsedTime The time which has elapsed (in seconds) since the last update. */
+        /*! Determines the angle to turn and the distance to travel for the next update to the target. 
+         *  This data is returned as a pair of integers, with the first being the angle in degrees, and the second
+         *  being the distance to travel.
+         *  \param elapsedTime The time which has elapsed (in seconds) since the last update. */
         std::pair<int,int> move( int elapsedTime );
 
 

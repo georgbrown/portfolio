@@ -72,14 +72,14 @@ void BaseObject::setRadius(int sizeRating){
 
     int dim = std::min(width,height);
 
-	// If the input sizeRating is not within the allowed range, it is set to a default mid-range value.
+    // If the input sizeRating is not within the allowed range, it is set to a default mid-range value.
     if(sizeRating < 1 || sizeRating > 100){
 
         std::cout << "Invalid object size choice.  Setting to 50 by default.\n";
         sizeRating = 50;
     }
 
-	// Setting the final object radius from the environment dimensions and sizeRating
+    // Setting the final object radius from the environment dimensions and sizeRating
     radius = ( (0.001*sizeRating) + 0.02) * 0.7*dim;
 
 }
@@ -127,11 +127,11 @@ void BaseObject::setColors(int primary, int secondary){
 /*! Method which sets flags based on current collision values */
 void BaseObject::setFlags( std::vector< std::pair<int,char> > collidingObjs ){
 
-	// Resetting all collision flags to false
+    // Resetting all collision flags to false
     resetFlags();
 
-	// Each collision pair contains a char which represents the type of collision.
-	// We switch on that char in a loop over all collision pairs, and set the collision flags accordingly.
+    // Each collision pair contains a char which represents the type of collision.
+    // We switch on that char in a loop over all collision pairs, and set the collision flags accordingly.
     typedef std::vector< std::pair<int,char> > CollideVectorPair; 
     for(CollideVectorPair::iterator it = collidingObjs.begin(); it != collidingObjs.end(); ++it){
     
