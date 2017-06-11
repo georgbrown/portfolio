@@ -1,0 +1,17 @@
+Installation:
+
+mkdir build
+cd build
+cmake ..
+make -j
+
+
+Usage:
+
+To run my example, type
+
+./raytracer ../example.txt
+
+Or to run any other example, simply change the input file.
+
+Note:  I placed some textures in the textures directory.  This is not required. However, if you place textures there, make sure in the config files to put textures/ in front of the filename.
